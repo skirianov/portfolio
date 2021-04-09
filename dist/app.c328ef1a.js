@@ -2018,20 +2018,30 @@ var _scroll = _interopRequireDefault(require("./scroll"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var link = document.querySelector('#proj-link');
-['load', 'resize'].forEach(function (event) {
+var link = document.querySelector("#proj-link");
+["load", "resize"].forEach(function (event) {
   window.addEventListener(event, function () {
     if (window.innerWidth < 600) {
-      link.addEventListener('click', function () {
+      link.addEventListener("click", function () {
         window.scroll(0, 1500);
       });
     } else {
       (0, _scroll.default)();
-      link.addEventListener('click', function () {
+      link.addEventListener("click", function () {
         window.scroll(0, 550);
       });
     }
   });
+});
+window.addEventListener("scroll", function () {
+  var scroll = window.scrollY;
+  console.log(scroll);
+
+  if (scroll < 600) {
+    document.querySelector(".contact-img-container").style.display = "none";
+  } else {
+    document.querySelector(".contact-img-container").style.display = "flex";
+  }
 });
 },{"./scroll":"scroll.js"}],"../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -2061,7 +2071,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34455" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36885" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
