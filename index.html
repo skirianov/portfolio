@@ -8,215 +8,233 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <link href="/tailwind.css" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <div class="container">
-      <div class="first-scroll">
-        <div class="top-left-sticky" id="city">
-          <p id="top-left">odessa, ukraine</p>
-        </div>
-        <div class="top-right-sticky">
-          <p id="top-right">full stack web developer.</p>
-        </div>
-        <div class="big-name-container">
-          <p class="big-name">S</p>
-          <p class="big-name">e</p>
-          <p class="big-name">r</p>
-          <p class="big-name">g</p>
-          <p class="big-name">i</p>
-          <p class="big-name">i</p>
-          <p class="big-name"> </p>
-          <p class="big-name">K</p>
-          <p class="big-name">i</p>
-          <p class="big-name">r</p>
-          <p class="big-name">i</p>
-          <p class="big-name">a</p>
-          <p class="big-name">n</p>
-          <p class="big-name">o</p>
-          <p class="big-name">v</p>
-        </div>
-        <div class="bottom-right" id="proj-link">
-          <a id="link" href="#projects-link">projects.</a>
-          <img src="./assets/code.png" alt="code" id="code">
-        </div>
-        <div class="arrow">
-          <img src="./assets/arrow.png" alt="scroll down" id="scroll">
-        </div>
-      </div>
-      <div class="second-scroll">
-        <div class="top-left-sticky" id="name">
-          <p id="top-left">sergii kirianov</p>
-        </div>
-        <div class="top-right-sticky">
-          <p id="about">about.</p>
-        </div>
-        <div class="second-page">
-          <div class="about-text">
-            <p>self-taught web dev.</p>
-            <p>switcher.</p>
-            <p>passionate about programming and future tech.</p>
-            <p>gamer, husband, dog lover &#10084;&#65039;</p>
-          </div>
-          <div class="blog">
-            <p>want to know me better?</p>
-            <p>check out my blog.</p>
-            <div class="blog-box">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" id="blog-link">blog.</a>
+  <div class="md:w-8/12 lg:w-8/12 2xl:w-6/12 m-auto border-2 border-gray-100 shadow-lg">
+    <div class="flex flex-row flex-wrap my-10 h-50 w-12/12 m-auto md:flex-col">
+      <div class="flex flex-col m-auto md:w-12/12">
+        <div class="flex-row flex border-solid justify-between rounded-lg px-2 py-2 mx-2">
+          <div class="w-8/12">
+            <h1 class="font-semibold text-xl md:text-2xl">Full Stack Web Developer</h1>
+            <div class="mt-6">
+              <p><strong>Name: </strong>Sergii Kirianov</p>
+              <p><strong>Location: </strong>Odessa, Ukraine</p>
+              <p><strong>Bio: </strong>Self-taught passionate Web Developer with Marine background.</p>
             </div>
           </div>
+          <div class="w-36 h-36 p-2">
+            <img class="rounded-full" src="assets/me.jpg">
+          </div>
+        </div>
+        <div class="flex flex-col justify-center space-y-1 mx-2 my-1">
+          <div class="p-2 flex flex-wrap justify-center">
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>JavaScript</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>HTML</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>CSS</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>Bootstrap</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>Tailwind</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>Material UI</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>NodeJs</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>Express</p>
+            </div>
+            <div class=" text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+              <p>MongoDb</p>
+            </div>
+          </div>
+          <div class="flex flex-row flex-wrap justify-center">
+            <a href="https://github.com/skirianov" class="text-md bg-gray-800 content-center text-white mx-2 my-2 lg:mx-1 lg:mx-1 py-0 w-28 md:w-36 hover:bg-gray-600">
+              <div class="flex p-1 space-x-2 md:space-x-6 mx-3">
+                <p class="my-3 md:my-5">GitHub</p>
+                <img class="my-3 w-6 h-6 md:w-10 md:h-10 filter invert" src="assets/github.png">
+              </div>
+            </a>
+            <a href="#" class="text-md bg-gray-800 content-center text-white mx-2 my-2 lg:mx-1 lg:mx-1 py-0 w-28 md:w-36 hover:bg-gray-600">
+              <div class="flex p-1 space-x-2 md:space-x-4 mx-1 md:mx-2">
+                <p class="my-3 md:my-5">LinkedIn</p>
+                <img class="my-3 w-6 h-6 md:w-10 md:h-10 filter invert" src="assets/linkedin.png">
+              </div>
+            </a>
+            <a href="https://twitter.com/SergiiKirianov" class="text-md bg-gray-800 content-center text-white mx-2 my-2 lg:mx-1 lg:mx-1 py-0 w-28 md:w-36 hover:bg-gray-600">
+              <div class="flex p-1 space-x-1 md:space-x-6 mx-3">
+                <p class="my-3 md:my-5">Twitter</p>
+                <img class="w-6 h-6 md:w-10 md:h-10 my-3 filter invert" src="assets/twitter.png">
+              </div>
+            </a>
+            <a href="https://blog.skirianov.com" class="text-md bg-gray-800 content-center text-white mx-2 my-2 lg:mx-1 lg:mx-1 py-0 w-28 md:w-36 hover:bg-gray-600">
+              <div class="flex p-1 space-x-4 md:space-x-6 mx-3">
+                <p class="my-3 md:my-5">Blog</p>
+                <img class="w-8 h-8 md:w-14 md:h-14 my-2 md:my-1 filter invert" src="assets/code.png">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="third-scroll">
-        <div class="top-right-sticky">
-          <p id="skills">skills.</p>
-        </div>
-        <div class="skill-container">
-          <div class="box">
-            <p>js</p>
-          </div>
-          <div class="box">
-            <p>html</p>
-          </div>
-          <div class="box">
-            <p>css</p>
-          </div>
-          <div class="box">
-            <p>react.js</p>
-          </div>
-          <div class="box">
-            <p>redux</p>
-          </div>
-          <div class="box">
-            <p>redux thunk</p>
-          </div>
-          <div class="box">
-            <p>node.js</p>
-          </div>
-          <div class="box">
-            <p>express</p>
-          </div>
-          <div class="box">
-            <p>mongo</p>
-          </div>
-          <div class="box">
-            <p>firebase</p>
-          </div>
-          <div class="box">
-            <p>material ui</p>
-          </div>
-          <div class="box">
-            <p>others.</p>
-          </div>
-        </div>
-        <div class="skills-text">
-          <p>joy in programming is constant learning and improving.</p>
-          <p>you will never know everything, but do your best.</p>
-        </div>
-      </div>
-      <div class="fourth-scroll">
-        <div class="top-right-sticky">
-          <p id="projects">projects.</p>
-        </div>
-        <div class="projects-container" id="projects-link">
-          <div class="project-box">
-            <img src="./assets/libtrack.png" alt="libtrack" class="project-img">
-            <div class="info">
-              <p class="project-head">libtrack.</p>
-              <div class="info-more">
-                <p>MERN + Material UI</p>
-                <div class="info-links">
-                  <div class="live">
-                    <a href="#">
-                      <img src="assets/live.png"></a>
-                  </div>
-                  <div class="github">
-                    <a href="https://github.com/skirianov" target="_blank">
-                      <img src="assets/github-sm.png"></a>
-                  </div>
+      <div class="m-auto justify-center space-y-4 w-11/12 my-2 md:w-12/12">
+        <div class="flex flex-row border-2 border-blue-400 rounded-lg shadow-md">
+          <div class="">
+            <p class="text-lg mx-4 my-4 font-semibold">Matter.js playground</p>
+            <div class="text-sm mt-4 ml-4 text-gray-600 md:w-10/12 w-11/12 text-center md:text-left">
+              <p>Showcase app of Matter.js library. Generate random shapes, generate shapes with random characteristics of 
+                defined shape or create your own using canvas inbuilt solution. Infinite spin, direction of spin and limitation control
+                with custom state management. Nice to play and watch.
+              </p>
+              <div class="flex flex-row flex-wrap justify-center mx-2 my-2">
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>JavaScript</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Matter.js</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Bootstrap</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Webpack</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Canvas API</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="project-box">
-            <img src="./assets/libtrack.png" alt="libtrack" class="project-img">
-            <div class="info">
-              <p class="project-head">libtrack.</p>
-              <div class="info-more">
-                <p>MERN + Material UI</p>
-                <div class="info-links">
-                  <div class="live">
-                    <a href="#">
-                      <img src="assets/live.png"></a>
-                  </div>
-                  <div class="github">
-                    <a href="https://github.com/skirianov" target="_blank">
-                      <img src="assets/github-sm.png"></a>
-                  </div>
-                </div>
+          <img src="assets/matter.png" class="hidden 2xl:block lg:w-96 lg:h-36 m-auto md:bg-gray-200 border-2 border-blue-400">
+          <div class="hidden md:block flex flex-column justify-center m-auto p-6">
+            <div class="m-auto space-y-2">
+              <div class="bg-blue-600 hover:bg-blue-500 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/github.png">
               </div>
-            </div>
-          </div><div class="project-box">
-            <img src="./assets/libtrack.png" alt="libtrack" class="project-img">
-            <div class="info">
-              <p class="project-head">libtrack.</p>
-              <div class="info-more">
-                <p>MERN + Material UI</p>
-                <div class="info-links">
-                  <div class="live">
-                    <a href="#">
-                      <img src="assets/live.png"></a>
-                  </div>
-                  <div class="github">
-                    <a href="https://github.com/skirianov" target="_blank">
-                      <img src="assets/github-sm.png"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><div class="project-box">
-            <img src="./assets/libtrack.png" alt="libtrack" class="project-img">
-            <div class="info">
-              <p class="project-head">libtrack.</p>
-              <div class="info-more">
-                <p>MERN + Material UI</p>
-                <div class="info-links">
-                  <div class="live">
-                    <a href="#">
-                      <img src="assets/live.png"></a>
-                  </div>
-                  <div class="github">
-                    <a href="https://github.com/skirianov" target="_blank">
-                      <img src="assets/github-sm.png"></a>
-                  </div>
-                </div>
+              <div class="bg-green-400 hover:bg-green-300 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/live.png">
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="fifth-scroll">
-        <div class="contact-text">
-          <p id="big">Sergii Kirianov</p>
-          <p id="mid">s.kirianov@gmail.com</p>
-          <p id="sm">odessa, ukraine</p>
+        <div class="flex flex-row border-2 border-blue-400 rounded-lg shadow-md">
+          <div class="">
+            <p class="text-lg mx-4 my-4 font-semibold">Libtrack</p>
+            <div class="text-sm mt-4 ml-4 text-gray-600 md:w-10/12 w-11/12 text-center md:text-left">
+              <p>Track your book journey with Libtrack. Search, add and modify status of books you read or reading.
+                Full stack application with full cycle of registration, authorisation and cache management. 
+                Find books available with Google API and add them to your library.
+              </p>
+              <div class="flex flex-row flex-wrap justify-center mx-2 my-2">
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>JavaScript</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>React</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Redux</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Material UI</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Node JS</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Express</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>MongoDb</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Google Books API</p>
+                </div>
+                <div class="undefined text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>bcrypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/libtrack.png" class="hidden 2xl:block lg:w-96 lg:h-36 m-auto md:bg-gray-200 border-2 border-blue-400">
+          <div class="hidden md:block flex flex-column justify-center m-auto p-6">
+            <div class="m-auto space-y-2">
+              <div class="bg-blue-600 hover:bg-blue-500 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/github.png">
+              </div>
+              <div class="bg-green-400 hover:bg-green-300 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/live.png">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-img-container">
-          <a href="https://www.linkedin.com/in/sergii-kirianov-446b86125/" target="_blank"><img src="assets/linkedin.png" class="contact-img"></a>
-          <img src="assets/instagram.png" class="contact-img">
-          <a href="https://github.com/skirianov" target="_blank"><img src="assets/github.png" class="contact-img"></a>
-          <a href="mailto:s.kirianov@gmail.com"><img src="assets/gmail.png" class="contact-img"></a>
-        </div>
-        <div class="contact-notes">
-          <p>i am always happy to meet new people.</p>
-          <p>job vise? just chat? want to ask question?</p>
-          <p>feel free to contact me</p>
+        <div class="flex flex-row border-2 border-blue-400 rounded-lg shadow-md">
+          <div class="">
+            <p class="text-lg mx-4 my-4 font-semibold">Libtrack</p>
+            <div class="text-sm mt-4 ml-4 text-gray-600 md:w-10/12 w-11/12 text-center md:text-left">
+              <p>Track your book journey with Libtrack. Search, add and modify status of books you read or reading.
+                Full stack application with full cycle of registration, authorisation and cache management. 
+                Find books available with Google API and add them to your library.
+              </p>
+              <div class="flex flex-row flex-wrap justify-center mx-2 my-2">
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>JavaScript</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>React</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Redux</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Material UI</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Node JS</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Express</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>MongoDb</p>
+                </div>
+                <div class="text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>Google Books API</p>
+                </div>
+                <div class="undefined text-center my-1 bg-blue-600 py-2 text-white text-xs rounded mx-1 p-2">
+                  <p>bcrypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/libtrack.png" class="hidden 2xl:block lg:w-auto lg:h-40 m-auto md:bg-gray-200">
+          <div class="hidden md:block flex flex-column justify-center m-auto p-6">
+            <div class="m-auto space-y-2">
+              <div class="bg-blue-600 hover:bg-blue-500 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/github.png">
+              </div>
+              <div class="bg-green-400 hover:bg-green-300 w-20 h-16 text-white flex justify-center rounded-lg">
+                <img class="filter invert w-12 h-12 my-2" src="assets/live.png">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
+  <div class="lg:top-10 lg:left-10 fixed bottom-4 right-4 bg-green-400 hover:bg-green-300 hover:text-white w-28 h-14 rounded-md text-lg text-center shadow-xl py-3">
+    <a href="#">Contact me</a>
+  </div>
+  
   <script src="app.js"></script>
 </body>
 
