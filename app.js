@@ -2,6 +2,7 @@ const tabs = document.getElementsByClassName('tab');
 const tabLinks = document.getElementsByClassName('tab-link');
 const tabContent = document.getElementsByClassName('tab-content');
 const contactBtn = document.getElementById('contact-btn');
+let themeBtn = document.getElementById('switch-btn');
 
 let deselectTabs = function(target) {
   for (let i = 0; i < target.length; i++){
@@ -25,7 +26,6 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 (function() {
-
   contactBtn.addEventListener('click', () => {
     let contactTab = document.getElementById('contact-tab');
     deselectTabs(tabs);
@@ -34,3 +34,4 @@ for (let i = 0; i < tabs.length; i++) {
     contactTab.className = 'tab selected';
   });
 })()
+

@@ -37,6 +37,79 @@ ul {
   list-style-type: none;
 }
 
+#switch {
+  position: absolute;
+  display: inline-block;
+  top: 1.4rem;
+  right: 2rem;
+  width: 36px;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #55acee;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #55acee;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .fat {
   font-weight: 500;
 }
@@ -45,7 +118,7 @@ ul {
   cursor: pointer;
 }
 
-.container {
+#container {
   margin: auto;
   background-color: white;
   width: 100%;  
@@ -123,6 +196,7 @@ ul {
 .description-container > p {
   font-size: var(--font-sm);
   font-weight: 400;
+  line-height: 1.4rem;
 }
 
 .tabs-container {
@@ -274,7 +348,7 @@ iframe {
 }
 
 @media (min-width: 520px) {
-  .container {
+  #container {
     width: 100%;
   }
 
@@ -315,7 +389,7 @@ iframe {
 }
 
 @media (min-width: 768px) {
-  .container {
+  #container {
     width: 66%;
   }
 
@@ -332,7 +406,7 @@ iframe {
 }
 
 @media (min-width: 1024px) {
-  .container {
+  #container {
     width: 50%;
   }
 
@@ -343,7 +417,7 @@ iframe {
 }
 
 @media (min-width: 1280px) {
-  .container {
+  #container {
     width: 44%;
   }
 
@@ -436,3 +510,6 @@ iframe {
   background-color: #3674a7;
   color: #ffce41;
 }
+
+
+/*dark theme*/
