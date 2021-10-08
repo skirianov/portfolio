@@ -8,11 +8,5 @@
   },
   "author": "Sergii Kirianov",
   "license": "ISC",
-  "dependencies": {
-    "animejs": "^3.2.1"
-  },
-  "devDependencies": {
-    "cssnano": "^4.1.11"
-  },
   "keywords": []
 }

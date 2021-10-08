@@ -5,212 +5,182 @@
   <title>Sergii Kirianov</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="/tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
-<body class="overflow-scroll">
-  <div class="2xl:w-4/12 xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-10/12 sm:m-auto">
-    <div class="hidden mx-4 md:block">
-      <p class="text-lg font-semibold">Sergii Kirianov</p>
-      <p class="text-xs text-gray-400">2 projects</p>
+<body>
+  <div class="container">
+    <div class="header">
+      <p class="fat">Sergii Kirianov</p>
+      <p class="sub">3 projects</p>
     </div>
-    <div class="">
-      <img class="object-fill min-w-full" src="assets/header.jpeg">
-      <div class="flex flex-row justify-between">
-        <div class="w-24 h-24 md:w-36 md:h-36 p-1 -mt-8 md: lg:-mt-12 mx-2 lg:mx-4 rounded-full">
-          <img class="rounded-full border-2 md:border-4 border-white" src="assets/me.jpg">
+    <div class="info">
+      <img class="header-img" src="assets/header.jpeg">
+      <div class="contact-container">
+        <div class="picture-container">
+          <img class="picture" src="assets/me.jpg">
         </div>
-        <div class="bg-black text-white font-semibold w-24 h-9 rounded-3xl text-center p-1.5 mx-4 my-4">
-          <a href="#">Contact</a>
+        <div class="contact">
+          <p id="contact-btn" class="interact">Contact</p>
         </div>
       </div>
-      <p class="text-xl font-bold mx-4">Sergii Kirianov</p>
-      <p class="text-sm mx-4 text-gray-800 font-thin">@FullStackWebDeveloper</p>
+      <p>Sergii Kirianov</p>
+      <p class="sub big">@FullStackWebDeveloper</p>
     </div>
-    <div class="my-2 mx-4">
-      <p class="text-sm">
+    <div class="description-container">
+      <p>
         I am working with sophisticated technologies to bring the best user experience on the web.
         Complex web applications, 2D and 3D rendering engines.
         JavaScript is my passion. Programming enthusiast.
       </p>
     </div>
-    <div class="mx-2 md:mx-8 sticky top-0 bg-white -mb-9 border-b-2 border-gray-200">
-      <ul class="flex flex-row justify-between font-semibold md:text-sm">
-        <li class="border-b-4 border-blue-400 p-2 tab"><a href="#projects" class="tab-link">Projects</a></li>
-        <li class="text-gray-500 p-2 tab "><a href="#skills" class="tab-link">Skills</a></li>
-        <li class="text-gray-500 p-2 tab"><a href="#contacts" class="tab-link">Contacts</a></li>
-        <li class="text-gray-500 p-2 tab"><a href="#tweets" class="tab-link">Tweets</a></li>
+    <div class="tabs-container">
+      <ul class="tabs">
+        <li class="tab selected interact"><p class="tab-link">Projects</p></li>
+        <li class="tab interact"><p class="tab-link">Skills</p></li>
+        <li class="tab interact" id="contact-tab"><p class="tab-link">Contacts</p></li>
+        <li class="tab interact"><p class="tab-link">Tweets</p></li>
       </ul>
     </div>
-    <div class="scene">
-      <div class="pages">
-        <div id="projects" class="page">
-          <div class="">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">Libtrack</p>
-                  <p>|</p>
-                  <p class="text-xs p-0.5 mr-2">MERN, Google Books API, Material UI</p>
-                </div>
-                <p class="my-2">Track your book journey with Libtrack. Search, add and modify status of books you read
-                  or reading.
-                  Full stack application with full cycle of registration, authorisation and cache management.
-                  Find books available with Google API and add them to your library.
-                </p>
-                <div>
-                  <img src="assets/libtrack.png" class="rounded-xl my-2 border-2 border-gray-200">
-                </div>
-                <div class="flex flex-row space-x-20 justify-center font-thin">
-                  <div class="flex flex-row space-x-2">
-                    <img src="assets/link.png" class="h-5">
-                    <p>Live</p>
-                  </div>
-                  <div class="flex flex-row space-x-2">
-                    <img src="assets/git-gray.png" class="h-6">
-                    <p>GitHub</p>
-                  </div>
-                </div>
-              </div>
+    <div class="pages">
+      <div id="projects" class="tab-content show">
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>ssnippet</strong></p>
+              <p class="sub">React, Redux, Prismjs, Chakra UI</p>
             </div>
-          </div>
-          <div class="border-t-2 border-gray-100">
-            <div class="my-2 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">Shapes Js</p>
-                  <p>|</p>
-                  <p class="text-xs p-0.5 mr-2">Vanilla, MatterJs, Bootstrap</p>
-                </div>
-                <p>Showcase app of Matter.js library. Generate random shapes, generate shapes with random
-                  characteristics of
-                  defined shape or create your own using canvas inbuilt solution. Infinite spin, direction of spin and
-                  limitation control
-                  with custom state management. Nice to play and watch.
-                </p>
-                <div>
-                  <img src="assets/matter.png" class="rounded-xl my-2 border-2 border-gray-200">
-                </div>
-                <div class="flex flex-row space-x-20 justify-center font-thin">
-                  <div class="flex flex-row space-x-2">
-                    <img src="assets/link.png" class="h-5">
-                    <p>Live</p>
-                  </div>
-                  <div class="flex flex-row space-x-2">
-                    <img src="assets/git-gray.png" class="h-6">
-                    <p>GitHub</p>
-                  </div>
-                </div>
+            <p class="project-info">ssnippet is app to create code snippets you love. For your blog, Twitter post or other educational content.
+              Automatic code highlighitg, full customisation and more.
+            </p>
+            <img src="assets/ssnippet.png" class="project-image">
+            <div class="links">
+              <div class="link">
+                <img src="assets/link.png">
+                <a href="https://ssnippet.app">Live</a>
+              </div>
+              <div class="link">
+                <img src="assets/github.png">
+                <a href="https://github.com/skirianov/ssnippet">GitHub</a>
               </div>
             </div>
           </div>
         </div>
-        <div id="skills" class="page">
-          <div class="">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">Skills</p>
-                  <p>|</p>
-                  <p class="text-xs p-0.5 mr-2">Full Stack JavaScript</p>
-                </div>
-                <ul class="flex flex-wrap">
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">JavaScript</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">HTML</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">CSS</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Tailwind</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Bootstrap</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">MaterilUI</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">NodeJs</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Express</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">MongoDb</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Matter.js</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Three.js</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Python</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">C</li>
-                </ul>
-              </div>
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>Libtrack</strong></p>
+              <p class="sub">MERN, Google Books API, Material UI</p>
             </div>
-
-          </div>
-        </div>
-        <div id="contacts" class="page">
-          <div class="">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">GitHub</p>
-                  <p class="text-xs p-0.5 mr-2"></p>
-                </div>
-                <a class="text-blue-400 my-2" href="https://github.com/skirianov">github.com/skirianov</a>
+            <p class="project-info">Track your book journey with Libtrack. Search, add and modify status of books you read
+              or reading.
+              Full stack application with full cycle of registration, authorisation and cache management.
+              Find books available with Google API and add them to your library.
+            </p>
+            <img src="assets/libtrack.png" class="project-image">
+            <div class="links">
+              <div class="link">
+                <img src="assets/link.png">
+                <a href="https://secure-mountain-66562.herokuapp.com/">Live</a>
               </div>
-            </div>
-          </div>
-          <div class="border-t-2 border-gray-100">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">LinkedIn</p>
-                  <p class="text-xs p-0.5 mr-2"></p>
-                </div>
-                <a class="text-blue-400 my-2" href="https://github.com/skirianov">linkedin.com/skirianov</a>
-              </div>
-            </div>
-          </div>
-          <div class="border-t-2 border-gray-100">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">Email</p>
-                  <p class="text-xs p-0.5 mr-2"></p>
-                </div>
-                <a class="text-blue-400 my-2" href="mail: s.kirianov@gmail.com">s.kirianov@gmail.com</a>
+              <div class="link">
+                <img src="assets/github.png">
+                <a href="https://github.com/skirianov/libtrack">GitHub</a>
               </div>
             </div>
           </div>
         </div>
-        <div id="tweets" class="page">
-          <div class="">
-            <div class="my-4 flex flex-row justify-between mx-4">
-              <img class="w-12 h-12 md:w-14 md:h-14 rounded-full md:mx-4 mx-2" src="./assets/me.jpg">
-              <div class="text-sm w-10/12">
-                <div class="flex flex-row space-x-1 text-gray-500">
-                  <p class="font-bold text-black text-md">Skills</p>
-                  <p>|</p>
-                  <p class="text-xs p-0.5 mr-2">Full Stack JavaScript</p>
-                </div>
-                <ul class="flex flex-wrap">
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">JavaScript</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">HTML</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">CSS</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Tailwind</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Bootstrap</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">MaterilUI</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">NodeJs</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Express</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">MongoDb</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Matter.js</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Three.js</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">Python</li>
-                  <li class="bg-blue-500 w-24 h-10 rounded-lg text-white text-center p-2 mx-2 my-2">C</li>
-                </ul>
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>Shapes Js</strong></p>
+              <p class="sub">Vanilla, MatterJs, Bootstrap</p>
+            </div>
+            <p class="project-info">Showcase app of Matter.js library. Generate random shapes, generate shapes with random
+              characteristics of
+              defined shape or create your own using canvas inbuilt solution. Infinite spin, direction of spin and
+              limitation control
+              with custom state management. Nice to play and watch.
+            </p>
+            <img src="assets/matter.png" class="project-image">
+            <div class="links">
+              <div class="link">
+                <img src="assets/link.png">
+                <a href="https://skirianov.github.io/matterjs-playground/dist/">Live</a>
+              </div>
+              <div class="link">
+                <img src="assets/github.png">
+                <a href="https://github.com/skirianov/matterjs-playground">GitHub</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="skills" class="tab-content">
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>Skills</strong></p>
+              <p class="sub">Full Stack JavaScript</p>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-box" id="js">JavaScript</li>
+              <li class="skill-box" id="html">HTML</li>
+              <li class="skill-box" id="css">CSS</li>
+              <li class="skill-box" id="react">React</li>
+              <li class="skill-box" id="redux">Redux</li>
+              <li class="skill-box" id="chakra">Chakra UI</li>
+              <li class="skill-box" id="tailwind">Tailwind</li>
+              <li class="skill-box" id="bootstrap">Bootstrap</li>
+              <li class="skill-box" id="material">MaterilUI</li>
+              <li class="skill-box" id="node">NodeJs</li>
+              <li class="skill-box" id="express">Express</li>
+              <li class="skill-box" id="mongo">MongoDb</li>
+              <li class="skill-box" id="matter">Matter.js</li>
+              <li class="skill-box" id="python">Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="contacts" class="tab-content">
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>GitHub</strong></p>
+              <p class="sub">skirianov</p>
+            </div>
+            <p class="project-info">Projects, Code and Learning 🤔</p>
+            <a href="https://github.com/skirianov" target="blank"><img src="assets/githublink.png"></img></a>
+          </div>
+        </div>
+        <div class="content-box">
+          <img class="content-picture" src="./assets/me.jpg">
+          <div class="content-info">
+            <div class="info-header">
+              <p class="content-header"><strong>LinkedIn</strong></p>
+              <p class="sub">skirianov</p>
+            </div>
+            <p class="project-info">You can find my work experience here ✌️</p>
+            <a href="https://www.linkedin.com/in/skirianov" target="blank"><img src="assets/linkedinlink.png"></img></a>
+          </div>
+        </div>
+      </div>
+      <div id="tweets" class="tab-content">
+        <div class="content-box">
+            <a class="twitter-timeline" id="follow" data-lang="en" data-width="600" data-theme="light" href="https://twitter.com/SergiiKirianov?ref_src=twsrc%5Etfw"></a>
+        </div>
+      </div>
     </div>
-
     <script src="app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
 </html>
