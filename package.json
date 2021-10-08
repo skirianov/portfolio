@@ -10,7 +10,6 @@
   "license": "ISC",
   "keywords": [],
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0"
+    "@parcel/transformer-image": "^2.0.0-rc.0"
   }
 }
