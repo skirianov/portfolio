@@ -274,7 +274,7 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   margin: 0.4rem;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   border-bottom: 1px solid var(--gray-lt);
 }
 
@@ -335,7 +335,8 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .link {
