@@ -272,7 +272,7 @@ input:checked + .slider:before {
 .content-header {
   font-size: var(--font-sm);
   padding-right: 0.4rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0rem;
   border-right: 1px solid rgba(0,0,0,0.1);
 }
 
