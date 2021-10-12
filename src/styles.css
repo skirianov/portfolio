@@ -346,16 +346,24 @@ input:checked + .slider:before {
 }
 
 .skill-box {
+  display: flex;
   height: 3rem;
   width: auto;
-  /* background-color: var(--main-color); */
+  background-color: var(--main-color);
   margin-right: 0.6rem;
   margin-bottom: 0.6rem;
+  align-items: center;
+  text-align: center;
   padding: 0.8rem;
-  /* color: white; */
+  color: white;
   border-radius: 10px;
   font-size: var(--font-md);
   font-weight: var(--font-bold);
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+  transition: transform 300ms;
 }
 
 .contacts {
@@ -459,10 +467,10 @@ iframe {
   }
 
   .contact {
-    height: 3rem;
-    width: 8rem;
-    padding: 10px;
-    margin: 1.4rem 5rem;
+    height: 2.7rem;
+    width: 7rem;
+    padding: 0.6rem;
+    margin: 1.4rem 2rem;
   }
 
   #contact-btn {
@@ -480,76 +488,3 @@ iframe {
   }
 
 }
-
-#js {
-  background-color: #f0db4f;
-  color: #323330;
-}
-
-#html {
-  background-color: #e34c26;
-  color: #fff;
-}
-
-#css {
-  background-color: #0f5298;
-  color: #fff;
-}
-
-#react {
-  background-color: #2a2c2e;
-  color: #61dafb;
-}
-
-#redux {
-  background-color: #764abc;
-  color: #fff;
-}
-
-#chakra {
-  background: linear-gradient(#2abfb3,#4ac9be);
-  color: #fff;
-}
-
-#tailwind {
-  background: linear-gradient(90deg, #04b0cd, #13bfb1);
-  color: #4c4c4c;
-}
-
-#bootstrap {
-  background-color: #563d7c;
-  color: #fff;
-}
-
-#material {
-  background:linear-gradient(90deg, #00b0ff, #0081cb);
-  color: #fff;
-}
-
-#node {
-  background-color: #68a063;
-  color: #303030;
-}
-
-#express {
-  background-color: rgb(230, 230, 230);
-  color: #000;
-}
-
-#mongo {
-  background-color: #10aa50;
-  color: #3d3c40;
-}
-
-#matter {
-  background-color: #ed5c5c;
-  color: #49525f;
-}
-
-#python {
-  background-color: #3674a7;
-  color: #ffce41;
-}
-
-
-/*dark theme*/

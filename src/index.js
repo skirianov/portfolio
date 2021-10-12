@@ -34,3 +34,4 @@ for (let i = 0; i < tabs.length; i++) {
     contactTab.className = 'tab selected';
   });
 })()
+

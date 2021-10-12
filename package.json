@@ -2,16 +2,19 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "S.kirianov portfolio",
-  "private": true,
+  "source": "src/index.html",
+  "browserList": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "Sergii Kirianov",
   "license": "ISC",
   "keywords": [],
-  "devDependencies": {
-  },
   "dependencies": {
     "firebase": "^9.1.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
   }
 }
