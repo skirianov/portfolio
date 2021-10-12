@@ -1,5 +1,3 @@
-import './styles.css';
-
 const tabs = document.getElementsByClassName('tab');
 const tabLinks = document.getElementsByClassName('tab-link');
 const tabContent = document.getElementsByClassName('tab-content');
