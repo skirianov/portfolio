@@ -175,16 +175,25 @@ input:checked + .slider:before {
 }
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
-  color: white;
-  font-size: var(--font-lg);
   height: 2rem;
   width: 6rem;
   border-radius: 2rem;
-  padding: 6px;
   text-align: center;
   font-weight: var(--font-bold);
   margin: 4%;
+}
+
+#contact-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: center;
+  font-weight: var(--font-bold);
+
 }
 
 .description-container {

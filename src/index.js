@@ -26,12 +26,9 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 (function() {
-  contactBtn.addEventListener('click', () => {
-    let contactTab = document.getElementById('contact-tab');
-    deselectTabs(tabs);
-    deselectContent(tabContent);
-    document.getElementById('contacts').className = "tab-content show";
-    contactTab.className = 'tab selected';
-  });
+  contactBtn.addEventListener('click', () => sendMail())
 })()
 
+let sendMail = function () {
+  window.location = "mailto:skirianov@gmail.com";
+}
