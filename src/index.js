@@ -1,3 +1,5 @@
+import './styles.css';
+
 const tabs = document.getElementsByClassName('tab');
 const tabLinks = document.getElementsByClassName('tab-link');
 const tabContent = document.getElementsByClassName('tab-content');
@@ -34,4 +36,3 @@ for (let i = 0; i < tabs.length; i++) {
     contactTab.className = 'tab selected';
   });
 })()
-
