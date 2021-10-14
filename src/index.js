@@ -48,18 +48,6 @@ const toggleClasses = () => {
   });
 }
 
-let url = 'https://publish.twitter.com/oembed?url=https://twitter.com/SergiiKirianov';
-
-let xhr = new XMLHttpRequest();
-xhr.open("GET", url, mode);
-xhr.onreadystatechange = () => {
-  if (xhr.readyState === 4) {
-    console.log(xhr.status);
-    console.log(xhr.responseText);
-  }
-}
-xhr.send();
-
 for (let i = 0; i < tabs.length; i++) {
   tabs[i].addEventListener('click', () => {
     deselectTabs(tabs);
