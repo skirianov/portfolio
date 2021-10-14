@@ -211,13 +211,28 @@
       <div id="tweets" class="tab-content">
         <div class="content-box ">
           <div id="tweet-content">
-            <a class="twitter-timeline" id="follow" data-lang="en" data-theme="light" data-chrome="noheader transparent"
-            href="https://twitter.com/SergiiKirianov?ref_src=twsrc%5Etfw"></a>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
     <script src="index.js" type="module"></script>
 </body>
 

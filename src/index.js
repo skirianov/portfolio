@@ -4,6 +4,25 @@ const contactBtn = document.getElementById('contact-btn');
 const mode = document.getElementById('mode');
 let theme = 'light';
 
+
+const loadTwitter = () => {
+  document.getElementById('tweet-content').innerHTML = '<div class="loader">Loading...</div>';
+  setTimeout(() => {
+    twttr.widgets.createTimeline(
+      {
+        sourceType: 'profile',
+        screenName: 'SergiiKirianov'
+      },
+      document.getElementById('tweet-content'),
+      {
+        related: 'SergiiKirianov',
+        theme: theme === 'dark' ? 'dark' : null,
+      }).then(function (el) {
+        document.getElementsByClassName('loader')[0].style.display = 'none';
+      });
+  }, 200);
+}
+
 let deselectTabs = function(target) {
   for (let i = 0; i < target.length; i++){
     target[i].className = theme === 'light' ? 'tab interact' : 'tab interact dark';
@@ -46,6 +65,7 @@ const toggleClasses = () => {
   array.forEach(each => {
       each.classList.toggle('dark')
   });
+  loadTwitter();
 }
 
 for (let i = 0; i < tabs.length; i++) {
@@ -78,10 +98,12 @@ let sendMail = function () {
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   //dark mode
   let tweet = document.getElementById('follow');
-  tweet.setAttribute('data-theme', 'dark');
   mode.innerText = "🌚";
   theme = 'dark';
   toggleClasses();
 }
 
 mode.addEventListener('click', themeToggle);
+
+
+
