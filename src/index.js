@@ -105,5 +105,6 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 mode.addEventListener('click', themeToggle);
 
+document.addEventListener('load', loadTwitter());
 
 
