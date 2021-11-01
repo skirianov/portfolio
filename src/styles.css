@@ -94,6 +94,7 @@ ul {
 .contact-container {
   font-size: var(--font-sm);
   display: flex;
+  align-content: center;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -431,7 +432,6 @@ ul {
 
 @media (min-width: 1024px) {
   #contact {
-    padding: 6px;
     margin: 1.1rem 2rem;
   }
 }
@@ -444,12 +444,12 @@ ul {
   .contact {
     height: 2.7rem;
     width: 7rem;
-    padding: 0.6rem;
     margin: 1.4rem 2rem;
   }
 
   #contact-btn {
-    font-size: var(--font-xl);
+    font-size: var(--font-lg);
+    font-weight: 500;
   }
 
   .project-info {
